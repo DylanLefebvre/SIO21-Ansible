@@ -1,0 +1,5 @@
+---
+- name: "[wordpress] - update cache"
+  apt:
+    update_cache: yes
+  become: yes
