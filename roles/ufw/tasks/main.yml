@@ -1,2 +1,5 @@
 ---
 # tasks file for ufw
+- name: Allow all access to tcp port SSH_PORT, 80 and 22
+  ufw: rule=allow port={{item}} proto=tcp
+  with-items: ["{{ssh_port}}",80,22]

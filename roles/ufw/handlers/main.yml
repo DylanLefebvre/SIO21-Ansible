@@ -1,2 +1,4 @@
 ---
 # handlers file for ufw
+- name: Enable UFW and close all ports
+  ufw: state=enabled policy=deny

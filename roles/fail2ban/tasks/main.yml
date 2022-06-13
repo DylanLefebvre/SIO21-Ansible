@@ -1,2 +1,4 @@
 ---
 # tasks file for fail2ban
+- name: Installfail2ban
+  apt: name=fail2ban state=installed
