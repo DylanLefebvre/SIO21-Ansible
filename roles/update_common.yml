@@ -3,7 +3,12 @@
   become: yes
   become_user: root
   become_method: sudo
-
+ 
+  # Liste des roles à installer
+  roles:
+    - common
+    - ssh
+    - fail2ban
 
   tasks:
   - name : Installation des paquets communs à tous les serveurs
