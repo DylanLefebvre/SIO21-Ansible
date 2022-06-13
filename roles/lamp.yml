@@ -1,0 +1,5 @@
+---
+- name: "[Lamp] - update cache"
+  apt:
+    update_cache: yes
+  become: yes 
